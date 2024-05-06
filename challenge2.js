@@ -49,3 +49,32 @@ function oddsSmallerThan(n) {
 function squareOrDouble(n) {
   // Your code here
 }
+
+function greet(name) {
+  console.log(`Hello ${name}`);
+}
+
+function isOdd(n) {
+  return n % 2 !== 0;
+}
+
+function oddsSmallerThan(n) {
+  return Math.floor((n - 1) / 2);
+}
+
+function squareOrDouble(n) {
+  if (isOdd(n)) {
+    return n * n;
+  } else {
+    return n * 2;
+  }
+}
+
+// Example calls
+greet("Dawood");
+console.log(isOdd(7));
+console.log(isOdd(10));
+console.log(oddsSmallerThan(7));
+console.log(oddsSmallerThan(15));
+console.log(squareOrDouble(16));
+console.log(squareOrDouble(9));
